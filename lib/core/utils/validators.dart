@@ -11,7 +11,7 @@ class Validators {
       return "Email cannot be empty";
     }
     final emailRegex = RegExp(
-      r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\$',
+      r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
     );
     if (!emailRegex.hasMatch(value)) {
       return "Enter a valid email address";
@@ -23,7 +23,7 @@ class Validators {
     if (value == null || value.trim().isEmpty) {
       return "Phone number cannot be empty";
     }
-    final phoneRegex = RegExp(r'^[0-9]{10}\$');
+    final phoneRegex = RegExp(r'^\+?[0-9]+(-[0-9]+)*$');
     if (!phoneRegex.hasMatch(value)) {
       return "Enter a valid 10-digit phone number";
     }

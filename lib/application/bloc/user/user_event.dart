@@ -37,7 +37,7 @@ class UpdateUserEvent extends UserEvent {
   final int id;
   final UserModel user;
 
-  UpdateUserEvent(this.id, this.user);
+  UpdateUserEvent({required this.id, required this.user});
 
   @override
   List<Object?> get props => [id, user];

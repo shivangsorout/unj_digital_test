@@ -6,6 +6,7 @@ class AppTheme {
     brightness: Brightness.light,
     scaffoldBackgroundColor: Colors.white,
     appBarTheme: const AppBarTheme(
+      titleTextStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.w500),
       backgroundColor: Colors.blue,
       foregroundColor: Colors.white,
       elevation: 0,
@@ -13,6 +14,10 @@ class AppTheme {
     textTheme: const TextTheme(
       bodyLarge: TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
       bodyMedium: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: Colors.blue,
+      foregroundColor: Colors.white,
     ),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(

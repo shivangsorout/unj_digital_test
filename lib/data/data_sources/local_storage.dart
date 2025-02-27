@@ -119,7 +119,7 @@ class LocalStorage {
     await prefs.setInt(_latestUserIdKey, id);
   }
 
-  Future<void> clearStorage(int page) async {
+  Future<void> clearStorage() async {
     final prefs = await SharedPreferences.getInstance();
     prefs.clear();
   }
