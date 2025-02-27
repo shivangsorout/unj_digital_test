@@ -48,9 +48,9 @@ I used the Repository Design Pattern to separate the data layer (API, local stor
 - It decides where to fetch data from (cache or API) and ensures efficient data management.
 
 ### 2️⃣ Flutter BLoC (State Management Layer):
-- Events (user_event.dart) → Define user actions (e.g., FetchUsers, AddUser).
+- Events (user_event.dart) → Define user actions (e.g., FetchUsersEvent, AddUserEvent).
 - Bloc (user_bloc.dart) → Handles business logic by reacting to events and updating state.
-- States (user_state.dart) → Represent different UI states (e.g., UsersLoading, UsersLoaded, UserError).
+- States (user_state.dart) → Represent different UI states (e.g., UsersLoadingState, UsersLoadedState, UserErrorState).
 
 ### Why This Approach?
 - [x] Separation of Concerns → UI, logic, and data management are independent.
